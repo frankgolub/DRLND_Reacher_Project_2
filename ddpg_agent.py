@@ -10,14 +10,15 @@ import torch.nn.functional as F
 import torch.optim as optim
 
 BUFFER_SIZE = int(1e6)  # replay buffer size
-BATCH_SIZE = 128        # minibatch size
+BATCH_SIZE = 2*128 # 128        # minibatch size
 GAMMA = 0.99            # discount factor
-TAU = 1e-3              # for soft update of target parameters
-LR_ACTOR = 1e-4         # learning rate of the actor 
-LR_CRITIC = 3e-4        # learning rate of the critic
+TAU = 1e-2 # 1e-3              # for soft update of target parameters
+LR_ACTOR = 1e-3 # 1e-4         # learning rate of the actor 
+LR_CRITIC = 1e-3 # 3e-4        # learning rate of the critic
 WEIGHT_DECAY = 0.0001   # L2 weight decay
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
+#device = torch.device("cpu" if torch.cuda.is_available() else "cpu")
 print('device = ', device)
 
 class Agent():
@@ -51,6 +52,8 @@ class Agent():
 
         # Replay memory
         self.memory = ReplayBuffer(action_size, BUFFER_SIZE, BATCH_SIZE, random_seed)
+        
+        self.time_step = 0
     
     def step(self, state, action, reward, next_state, done):
         """Save experience in replay memory, and use random sample from buffer to learn."""
@@ -59,8 +62,12 @@ class Agent():
         for kk in range(len(done)):
             self.memory.add(state[kk], action[kk], reward[kk], next_state[kk], done[kk])
 
+        # see https://knowledge.udacity.com/questions/21712
+        self.time_step += 1 
+        self.time_step = self.time_step % 20
+        
         # Learn, if enough samples are available in memory
-        if len(self.memory) > BATCH_SIZE:
+        if len(self.memory) > BATCH_SIZE and self.time_step >= 10:
             experiences = self.memory.sample()
             self.learn(experiences, GAMMA)
 
