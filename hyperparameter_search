@@ -1785,3 +1785,345 @@ Episode 61	Average Score: 0.62
 Episode 62	Average Score: 0.62
 Episode 63	Average Score: 0.61
 
+
+------------------
+w/batch norm (only one layer for actor and critic)
+
+BUFFER_SIZE = int(1e6)  # replay buffer size
+BATCH_SIZE = 128        # minibatch size
+GAMMA = 0.99            # discount factor
+TAU = 1e-3              # for soft update of target parameters
+LR_ACTOR = 1e-4         # learning rate of the actor 
+LR_CRITIC = 3e-4        # learning rate of the critic
+WEIGHT_DECAY = 0.0001   # L2 weight decay
+
+Episode 1	Average Score: 0.00
+Episode 2	Average Score: 0.11
+Episode 3	Average Score: 0.22
+Episode 4	Average Score: 0.28
+Episode 5	Average Score: 0.33
+Episode 6	Average Score: 0.36
+Episode 7	Average Score: 0.40
+Episode 8	Average Score: 0.43
+Episode 9	Average Score: 0.47
+Episode 10	Average Score: 0.49
+Episode 11	Average Score: 0.51
+Episode 12	Average Score: 0.53
+Episode 13	Average Score: 0.54
+Episode 14	Average Score: 0.55
+Episode 15	Average Score: 0.55
+Episode 16	Average Score: 0.55
+Episode 17	Average Score: 0.55
+Episode 18	Average Score: 0.55
+Episode 19	Average Score: 0.55
+Episode 20	Average Score: 0.56
+Episode 21	Average Score: 0.56
+Episode 22	Average Score: 0.57
+Episode 23	Average Score: 0.57
+Episode 24	Average Score: 0.57
+Episode 25	Average Score: 0.58
+Episode 26	Average Score: 0.58
+Episode 27	Average Score: 0.58
+Episode 28	Average Score: 0.58
+Episode 29	Average Score: 0.59
+Episode 30	Average Score: 0.59
+Episode 31	Average Score: 0.58
+Episode 32	Average Score: 0.58
+Episode 33	Average Score: 0.59
+Episode 34	Average Score: 0.59
+Episode 35	Average Score: 0.59
+Episode 36	Average Score: 0.59
+Episode 37	Average Score: 0.59
+Episode 38	Average Score: 0.60
+Episode 39	Average Score: 0.60
+Episode 40	Average Score: 0.61
+Episode 41	Average Score: 0.60
+Episode 42	Average Score: 0.60
+
+
+------------------
+w/batch norm (only one layer for actor and critic)
+
+BUFFER_SIZE = int(1e6)  # replay buffer size
+BATCH_SIZE = 128        # minibatch size
+GAMMA = 0.99            # discount factor
+TAU = 1e-3              # for soft update of target parameters
+LR_ACTOR = 1e-3         # learning rate of the actor 
+LR_CRITIC = 3e-4        # learning rate of the critic
+WEIGHT_DECAY = 0.0001   # L2 weight decay
+
+Learning is slow and then stops.
+
+Episode 1	Average Score: 0.47
+Episode 2	Average Score: 0.50
+Episode 3	Average Score: 0.48
+Episode 4	Average Score: 0.58
+Episode 5	Average Score: 0.59
+Episode 6	Average Score: 0.58
+Episode 7	Average Score: 0.57
+Episode 8	Average Score: 0.58
+Episode 9	Average Score: 0.60
+Episode 10	Average Score: 0.62
+Episode 11	Average Score: 0.64
+Episode 12	Average Score: 0.66
+Episode 13	Average Score: 0.66
+Episode 14	Average Score: 0.66
+Episode 15	Average Score: 0.68
+Episode 16	Average Score: 0.68
+Episode 17	Average Score: 0.68
+Episode 18	Average Score: 0.67
+Episode 19	Average Score: 0.67
+Episode 20	Average Score: 0.67
+Episode 21	Average Score: 0.68
+Episode 22	Average Score: 0.68
+Episode 23	Average Score: 0.67
+Episode 24	Average Score: 0.67
+Episode 25	Average Score: 0.67
+Episode 26	Average Score: 0.68
+Episode 27	Average Score: 0.67
+Episode 28	Average Score: 0.67
+Episode 29	Average Score: 0.68
+Episode 30	Average Score: 0.68
+Episode 31	Average Score: 0.69
+Episode 32	Average Score: 0.68
+Episode 33	Average Score: 0.68
+Episode 34	Average Score: 0.68
+Episode 35	Average Score: 0.68
+Episode 36	Average Score: 0.68
+Episode 37	Average Score: 0.68
+Episode 38	Average Score: 0.67
+Episode 39	Average Score: 0.68
+Episode 40	Average Score: 0.68
+Episode 41	Average Score: 0.68
+Episode 42	Average Score: 0.67
+
+------------------
+w/batch norm (only one layer for actor and critic)
+
+BUFFER_SIZE = int(1e6)  # replay buffer size
+BATCH_SIZE = 128        # minibatch size
+GAMMA = 0.99            # discount factor
+TAU = 1e-3              # for soft update of target parameters
+LR_ACTOR = 1e-3  #1e-4       # learning rate of the actor 
+LR_CRITIC = 3e-3 # 3e-4        # learning rate of the critic
+WEIGHT_DECAY = 0.0001   # L2 weight decay
+
+Episode 1	Average Score: 0.06
+Episode 2	Average Score: 0.04
+Episode 3	Average Score: 0.02
+Episode 4	Average Score: 0.02
+Episode 5	Average Score: 0.03
+Episode 6	Average Score: 0.02
+Episode 7	Average Score: 0.02
+Episode 8	Average Score: 0.02
+Episode 9	Average Score: 0.02
+Episode 10	Average Score: 0.02
+Episode 11	Average Score: 0.02
+Episode 12	Average Score: 0.02
+Episode 13	Average Score: 0.02
+Episode 14	Average Score: 0.02
+Episode 15	Average Score: 0.02
+Episode 16	Average Score: 0.02
+Episode 17	Average Score: 0.02
+Episode 18	Average Score: 0.01
+Episode 19	Average Score: 0.01
+Episode 20	Average Score: 0.02
+
+
+--------------------
+w/batch norm (only one layer for actor and critic)
+
+BUFFER_SIZE = int(1e6)  # replay buffer size
+BATCH_SIZE = 128        # minibatch size
+GAMMA = 0.99            # discount factor
+TAU = 1e-2 # 1e-3              # for soft update of target parameters
+LR_ACTOR = 1e-3  #1e-4       # learning rate of the actor 
+LR_CRITIC = 3e-4        # learning rate of the critic
+WEIGHT_DECAY = 0.0001   # L2 weight decay
+
+Episode 1	Average Score: 0.53
+Episode 2	Average Score: 0.59
+Episode 3	Average Score: 0.58
+Episode 4	Average Score: 0.53
+Episode 5	Average Score: 0.53
+Episode 6	Average Score: 0.52
+Episode 7	Average Score: 0.51
+Episode 8	Average Score: 0.48
+Episode 9	Average Score: 0.44
+Episode 10	Average Score: 0.43
+Episode 11	Average Score: 0.41
+Episode 12	Average Score: 0.39
+Episode 13	Average Score: 0.38
+Episode 14	Average Score: 0.36
+Episode 15	Average Score: 0.36
+Episode 16	Average Score: 0.36
+Episode 17	Average Score: 0.35
+Episode 18	Average Score: 0.35
+Episode 19	Average Score: 0.34
+Episode 20	Average Score: 0.34
+Episode 21	Average Score: 0.33
+Episode 22	Average Score: 0.33
+Episode 23	Average Score: 0.33
+Episode 24	Average Score: 0.33
+Episode 25	Average Score: 0.32
+Episode 26	Average Score: 0.31
+Episode 27	Average Score: 0.31
+Episode 28	Average Score: 0.31
+Episode 29	Average Score: 0.31
+Episode 30	Average Score: 0.31
+Episode 31	Average Score: 0.31
+Episode 32	Average Score: 0.31
+Episode 33	Average Score: 0.30
+Episode 34	Average Score: 0.31
+Episode 35	Average Score: 0.31
+Episode 36	Average Score: 0.31
+Episode 37	Average Score: 0.30
+Episode 38	Average Score: 0.30
+Episode 39	Average Score: 0.30
+Episode 40	Average Score: 0.30
+Episode 41	Average Score: 0.30
+Episode 42	Average Score: 0.30
+Episode 43	Average Score: 0.29
+Episode 44	Average Score: 0.29
+Episode 45	Average Score: 0.29
+Episode 46	Average Score: 0.29
+Episode 47	Average Score: 0.29
+Episode 48	Average Score: 0.29
+Episode 49	Average Score: 0.29
+Episode 50	Average Score: 0.29
+Episode 51	Average Score: 0.28
+Episode 52	Average Score: 0.29
+
+--------------------
+w/batch norm (only one layer for actor and critic)
+
+BUFFER_SIZE = int(1e6)  # replay buffer size
+BATCH_SIZE = 256 # 128        # minibatch size
+GAMMA = 0.99            # discount factor
+TAU =  1e-3              # for soft update of target parameters
+LR_ACTOR = 1e-3  #1e-4       # learning rate of the actor 
+LR_CRITIC = 3e-4        # learning rate of the critic
+WEIGHT_DECAY = 0.0001   # L2 weight decay
+
+Episode 1	Average Score: 0.26
+Episode 2	Average Score: 0.34
+Episode 3	Average Score: 0.37
+Episode 4	Average Score: 0.40
+Episode 5	Average Score: 0.40
+Episode 6	Average Score: 0.42
+Episode 7	Average Score: 0.42
+Episode 8	Average Score: 0.43
+Episode 9	Average Score: 0.43
+Episode 10	Average Score: 0.44
+Episode 11	Average Score: 0.44
+Episode 12	Average Score: 0.44
+Episode 13	Average Score: 0.43
+Episode 14	Average Score: 0.43
+Episode 15	Average Score: 0.42
+Episode 16	Average Score: 0.43
+Episode 17	Average Score: 0.42
+Episode 18	Average Score: 0.41
+Episode 19	Average Score: 0.41
+Episode 20	Average Score: 0.41
+Episode 21	Average Score: 0.41
+Episode 22	Average Score: 0.41
+Episode 23	Average Score: 0.41
+Episode 24	Average Score: 0.41
+Episode 25	Average Score: 0.41
+Episode 26	Average Score: 0.41
+Episode 27	Average Score: 0.41
+Episode 28	Average Score: 0.41
+Episode 29	Average Score: 0.41
+Episode 30	Average Score: 0.41
+Episode 31	Average Score: 0.41
+Episode 32	Average Score: 0.42
+Episode 33	Average Score: 0.42
+Episode 34	Average Score: 0.42
+Episode 35	Average Score: 0.42
+Episode 36	Average Score: 0.41
+Episode 37	Average Score: 0.42
+Episode 38	Average Score: 0.42
+Episode 39	Average Score: 0.42
+Episode 40	Average Score: 0.42
+Episode 41	Average Score: 0.42
+Episode 42	Average Score: 0.42
+Episode 43	Average Score: 0.42
+Episode 44	Average Score: 0.42
+Episode 45	Average Score: 0.42
+Episode 46	Average Score: 0.42
+Episode 47	Average Score: 0.42
+
+--------------------
+w/batch norm (only one layer for actor and critic)
+
+BUFFER_SIZE = int(1e6)  # replay buffer size
+BATCH_SIZE = 128        # minibatch size
+GAMMA = 0.99            # discount factor
+TAU =  1e-3              # for soft update of target parameters
+LR_ACTOR = 1e-2  #1e-4       # learning rate of the actor 
+LR_CRITIC = 3e-4        # learning rate of the critic
+WEIGHT_DECAY = 0.0001   # L2 weight decay
+
+Episode 1	Average Score: 0.48
+Episode 2	Average Score: 0.35
+Episode 3	Average Score: 0.33
+Episode 4	Average Score: 0.30
+Episode 5	Average Score: 0.30
+Episode 6	Average Score: 0.29
+Episode 7	Average Score: 0.28
+Episode 8	Average Score: 0.27
+Episode 9	Average Score: 0.26
+Episode 10	Average Score: 0.26
+Episode 11	Average Score: 0.26
+Episode 12	Average Score: 0.26
+Episode 13	Average Score: 0.27
+Episode 14	Average Score: 0.27
+Episode 15	Average Score: 0.26
+Episode 16	Average Score: 0.26
+Episode 17	Average Score: 0.27
+Episode 18	Average Score: 0.26
+Episode 19	Average Score: 0.26
+Episode 20	Average Score: 0.26
+Episode 21	Average Score: 0.26
+Episode 22	Average Score: 0.26
+Episode 23	Average Score: 0.26
+Episode 24	Average Score: 0.26
+Episode 25	Average Score: 0.26
+Episode 26	Average Score: 0.26
+Episode 27	Average Score: 0.26
+Episode 28	Average Score: 0.26
+Episode 29	Average Score: 0.26
+Episode 30	Average Score: 0.26
+Episode 31	Average Score: 0.26
+Episode 32	Average Score: 0.26
+Episode 33	Average Score: 0.26
+Episode 34	Average Score: 0.26
+Episode 35	Average Score: 0.26
+Episode 36	Average Score: 0.26
+Episode 37	Average Score: 0.26
+Episode 38	Average Score: 0.26
+Episode 39	Average Score: 0.26
+Episode 40	Average Score: 0.26
+Episode 41	Average Score: 0.26
+Episode 42	Average Score: 0.26
+Episode 43	Average Score: 0.26
+Episode 44	Average Score: 0.26
+Episode 45	Average Score: 0.26
+Episode 46	Average Score: 0.26
+
+--------------
+w/batch norm (only one layer for actor and critic)
+
+BUFFER_SIZE = int(1e6)  # replay buffer size
+BATCH_SIZE = 128        # minibatch size
+GAMMA = 0.99            # discount factor
+TAU =  1e-3              # for soft update of target parameters
+LR_ACTOR = 1e-2  #1e-4       # learning rate of the actor 
+LR_CRITIC = 3e-4        # learning rate of the critic
+WEIGHT_DECAY = 0.0001   # L2 weight decay
+
+        if len(self.memory) > BATCH_SIZE + 20:# and self.time_step >= 10:
+            for kk in range(20):
+
+Training too slow
+
