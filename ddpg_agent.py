@@ -9,12 +9,12 @@ import torch
 import torch.nn.functional as F
 import torch.optim as optim
 
-BUFFER_SIZE = 1e6 #int(1e5) # replay buffer size
-BATCH_SIZE = 64 # 128        # minibatch size
+BUFFER_SIZE = int(2e6) #int(1e5) # replay buffer size
+BATCH_SIZE = 16 # 128 # 64 # 128        # minibatch size
 GAMMA = 0.99            # discount factor
-TAU =  1e-3              # for soft update of target parameters
-LR_ACTOR = 1e-4       # learning rate of the actor 
-LR_CRITIC = 1e-3 # 3e-4        # learning rate of the critic
+TAU =  1e-2 #1e-3              # for soft update of target parameters
+LR_ACTOR = 3e-4 # 1e-4       # learning rate of the actor 
+LR_CRITIC = 3e-3 #1e-3 # 3e-4        # learning rate of the critic
 WEIGHT_DECAY = 1e-2 #.0001   # L2 weight decay
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
@@ -64,10 +64,11 @@ class Agent():
 
         # see https://knowledge.udacity.com/questions/21712
         self.time_step += 1 
-        self.time_step = self.time_step % 20
         
         # Learn, if enough samples are available in memory
-        if len(self.memory) > BATCH_SIZE: # and self.time_step >= 10:
+        # if self.time_step % 20 == 0:  
+        # for kk in range(10):
+        if len(self.memory) > BATCH_SIZE:
             experiences = self.memory.sample()
             self.learn(experiences, GAMMA)
 
