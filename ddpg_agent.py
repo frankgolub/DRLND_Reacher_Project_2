@@ -9,13 +9,15 @@ import torch
 import torch.nn.functional as F
 import torch.optim as optim
 
-BUFFER_SIZE = int(2e6) #int(1e5) # replay buffer size
-BATCH_SIZE = 16 # 128 # 64 # 128        # minibatch size
+'''
+BUFFER_SIZE = int(1e6)  # replay buffer size
+BATCH_SIZE = 4*128        # minibatch size
 GAMMA = 0.99            # discount factor
-TAU =  1e-2 #1e-3              # for soft update of target parameters
-LR_ACTOR = 3e-4 # 1e-4       # learning rate of the actor 
-LR_CRITIC = 3e-3 #1e-3 # 3e-4        # learning rate of the critic
-WEIGHT_DECAY = 1e-2 #.0001   # L2 weight decay
+TAU = 1e-3 #1e-2 #1e-3              # for soft update of target parameters
+LR_ACTOR = 1e-3 # 1e-3 #1e-4         # learning rate of the actor 
+LR_CRITIC = 1e-3 # 3e-4        # learning rate of the critic
+WEIGHT_DECAY = 0# 0.0001   # L2 weight decay
+'''
 
 device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
 #device = torch.device("cpu" if torch.cuda.is_available() else "cpu")
@@ -24,7 +26,9 @@ print('device = ', device)
 class Agent():
     """Interacts with and learns from the environment."""
     
-    def __init__(self, state_size, action_size, random_seed):
+    def __init__(self, state_size, action_size, random_seed, 
+             buffer_size, batch_size, gamma, tau, lr_actor, lr_critic, weight_decay):
+        
         """Initialize an Agent object.
         
         Params
@@ -36,22 +40,30 @@ class Agent():
         self.state_size = state_size
         self.action_size = action_size
         self.seed = random.seed(random_seed)
+        
+        self.BUFFER_SIZE = buffer_size
+        self.BATCH_SIZE = batch_size
+        self.GAMMA = gamma
+        self.TAU = tau
+        self.LR_CRITIC = lr_critic
+        self.LR_ACTOR = lr_actor
+        self.WEIGHT_DECAY = weight_decay
 
         # Actor Network (w/ Target Network)
         self.actor_local = Actor(state_size, action_size, random_seed).to(device)
         self.actor_target = Actor(state_size, action_size, random_seed).to(device)
-        self.actor_optimizer = optim.Adam(self.actor_local.parameters(), lr=LR_ACTOR)
+        self.actor_optimizer = optim.Adam(self.actor_local.parameters(), lr=self.LR_ACTOR)
 
         # Critic Network (w/ Target Network)
         self.critic_local = Critic(state_size, action_size, random_seed).to(device)
         self.critic_target = Critic(state_size, action_size, random_seed).to(device)
-        self.critic_optimizer = optim.Adam(self.critic_local.parameters(), lr=LR_CRITIC, weight_decay=WEIGHT_DECAY)
+        self.critic_optimizer = optim.Adam(self.critic_local.parameters(), lr=self.LR_CRITIC, weight_decay=self.WEIGHT_DECAY)
 
         # Noise process
         self.noise = OUNoise(action_size, random_seed)
 
         # Replay memory
-        self.memory = ReplayBuffer(action_size, BUFFER_SIZE, BATCH_SIZE, random_seed)
+        self.memory = ReplayBuffer(action_size, self.BUFFER_SIZE, self.BATCH_SIZE, random_seed)
         
         self.time_step = 0
     
@@ -64,13 +76,12 @@ class Agent():
 
         # see https://knowledge.udacity.com/questions/21712
         self.time_step += 1 
+        self.time_step = self.time_step % 20
         
         # Learn, if enough samples are available in memory
-        # if self.time_step % 20 == 0:  
-        # for kk in range(10):
-        if len(self.memory) > BATCH_SIZE:
+        if len(self.memory) > self.BATCH_SIZE: # and self.time_step >= 10:
             experiences = self.memory.sample()
-            self.learn(experiences, GAMMA)
+            self.learn(experiences, self.GAMMA)
 
     def act(self, state, add_noise=True):
         """Returns actions for given state as per current policy."""
@@ -125,8 +136,8 @@ class Agent():
         self.actor_optimizer.step()
 
         # ----------------------- update target networks ----------------------- #
-        self.soft_update(self.critic_local, self.critic_target, TAU)
-        self.soft_update(self.actor_local, self.actor_target, TAU)                     
+        self.soft_update(self.critic_local, self.critic_target, self.TAU)
+        self.soft_update(self.actor_local, self.actor_target, self.TAU)                     
 
     def soft_update(self, local_model, target_model, tau):
         """Soft update model parameters.
