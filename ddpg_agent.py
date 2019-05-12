@@ -79,7 +79,8 @@ class Agent():
         self.time_step = self.time_step % 20
         
         # Learn, if enough samples are available in memory
-        if len(self.memory) > self.BATCH_SIZE: # and self.time_step >= 10:
+        #for kk in range(10):
+        if len(self.memory) > self.BATCH_SIZE:# and self.time_step >= 10:
             experiences = self.memory.sample()
             self.learn(experiences, self.GAMMA)
 
