@@ -76,11 +76,10 @@ class Agent():
 
         # see https://knowledge.udacity.com/questions/21712
         self.time_step += 1 
-        self.time_step = self.time_step % 20
         
         # Learn, if enough samples are available in memory
         #for kk in range(10):
-        if len(self.memory) > self.BATCH_SIZE:# and self.time_step >= 10:
+        if len(self.memory) > self.BATCH_SIZE and self.time_step % 1 == 0:
             experiences = self.memory.sample()
             self.learn(experiences, self.GAMMA)
 
