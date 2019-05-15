@@ -66,6 +66,8 @@ class Agent():
         self.memory = ReplayBuffer(action_size, self.BUFFER_SIZE, self.BATCH_SIZE, random_seed)
         
         self.time_step = 0
+        self.more_frequent_learning = 0
+        self.keep_learning = 1
     
     def step(self, state, action, reward, next_state, done):
         """Save experience in replay memory, and use random sample from buffer to learn."""
@@ -77,11 +79,17 @@ class Agent():
         # see https://knowledge.udacity.com/questions/21712
         self.time_step += 1 
         
-        # Learn, if enough samples are available in memory
-        #for kk in range(10):
-        if len(self.memory) > self.BATCH_SIZE and self.time_step % 1 == 0:
-            experiences = self.memory.sample()
-            self.learn(experiences, self.GAMMA)
+        #Learn, if enough samples are available in memory
+        if self.keep_learning == 1:
+            if self.more_frequent_learning == 1:
+                for kk in range(10):
+                    if len(self.memory) > self.BATCH_SIZE and self.time_step % 20 == 0:
+                        experiences = self.memory.sample()
+                        self.learn(experiences, self.GAMMA)
+            else:
+                if len(self.memory) > self.BATCH_SIZE and self.time_step % 1 == 0:
+                    experiences = self.memory.sample()
+                    self.learn(experiences, self.GAMMA)
 
     def act(self, state, add_noise=True):
         """Returns actions for given state as per current policy."""
