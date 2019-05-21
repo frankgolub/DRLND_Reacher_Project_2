@@ -21,7 +21,7 @@ pip uninstall torch
 conda install pytorch torchvision cudatoolkit=10.0 -c pytorch
 ```
 
-4. Download the twenty agent environment from one of the links below.  You need only select the environment that matches your operating system. If using Linux, also download the headless version from [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux_NoVis.zip):
+4. Download the twenty agent environment from one of the links below. Select the environment that matches your operating system. If using Linux, also download the headless version from [this link](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux_NoVis.zip):
 
     - **_Version 2: Twenty (20) Agents_**
         - Linux: [click here](https://s3-us-west-1.amazonaws.com/udacity-drlnd/P2/Reacher/Reacher_Linux.zip)

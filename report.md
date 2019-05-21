@@ -4,7 +4,7 @@ This report presents a solution to the Navigation Project in the Udacity Deep Re
 
 The following is sligthly modified from the course materials:
 
-> In this environment, twenty identical double-jointed arm can move to target locations. A reward of +0.1 is provided for each step that the agent's hand is in the goal location. Thus, the goal of your agent is to maintain its position at the target location for as many time steps as possible.
+> In this environment, twenty identical double-jointed arms can move to target locations. A reward of +0.1 is provided for each step that the agent's hand is in the goal location. Thus, the goal of your agent is to maintain its position at the target location for as many time steps as possible.
 >
 > The observation space consists of 33 variables corresponding to position, rotation, velocity, and angular velocities of the arm. Each action is a vector with four numbers, corresponding to torque applicable to two joints. Every entry in the action vector should be a number between -1 and 1.
 >
@@ -42,13 +42,13 @@ The input to the architecture of the actor is a 33-element state vector. This ar
 
 The input to the architecture of the critic is the same 33-element state vector. This architecture also consists of a 33 x 400 fully-connected layer, a batch-normalization function, and a relu activation function. However, the output of this relu function is concatenated with the 4-element action-value estimated from the first architecture to make a 404 element vector. Applied to this vector is a 404 x 300 fully-connected layer, a relu-activation function, and a 300 x 1 fully-connected layer. The weights of the last fully-connected layer are also initialized randomly in the range [-3e-3, 3e-3].
 
-Key hyperparameters that represent the network include buffer size (1e6), batch size (64), discount factor (0.99), and tau (1e-3). The networks use Adam for gradient descent. The learning rate of both the critic and the actor were set to 1e-3 for the first 200 episodes and 1e-4 for the next 40. Both the learning rate and the momentum were arrested for the last 49 so that the agent could obtain the requisite average score over the preceeding 100 episodes.
+Key hyperparameters that represent the network include buffer size (1e6), batch size (64), discount factor (0.99), and tau (1e-3). The networks use Adam for gradient descent. The learning rates of both the critic and the actor were set to 1e-3 for the first 200 episodes and 1e-4 for the next 40. Both the learning rate and the momentum for the two networks were arrested for the last 49 so that the agent could obtain the requisite average score over the preceeding 100 episodes.
 
 One episode corresponds to 1400 time steps. At each time step, twenty agents simultaneously add their experiences to the same replay buffer, and the regular weights of both networks update only once. The previous weights of the target network add to the updated weights of the regular network by the ratio of tau:(1 - tau) to form the new weights of the target network.
 
 ## Lessons Learned
 
-The choice of random seed substantially affects whether a network can learn. Neither network invokes as many batch normalization functions as the DeepMind paper describes. The hyperparameters in this implementation are similar to but not the same as the hyperparameters in the DeepMind implementation. Both the learning rate and the momentum can be stopped to assess performance over a period of time. 
+The choice of random seed substantially affects whether a network can learn. Neither network invokes as many batch normalization functions as the DeepMind paper describes. For example, batch normalization is _not_ used after the state input. The hyperparameters in this implementation are similar to but not the same as the hyperparameters in the DeepMind implementation. Both the learning rate and the momentum can be stopped to assess performance over a period of time. 
 
 ## Future Work
 
@@ -57,6 +57,8 @@ The choice of random seed substantially affects whether a network can learn. Nei
 ## References
 
 Lillicrap,  T. P.,  Hunt,  J. J.,  Pritzel,  A.,  Heess,  N.,  Erez,T., Tassa, Y., Silver, D., and Wierstra, D.  [Continuous control with deep reinforcement learning](https://arxiv.org/abs/1509.02971). _arXiv preprint arXiv:1509.02971, 2016._
+
+Fujimoto, S., van Hoof, H., Meger, D. [Addressing Function Approximation Error in Actor-Critic Methods](https://arxiv.org/pdf/1802.09477.pdf). _arXiv preprint arXiv:1802.09477, 2018._
 
 
 
