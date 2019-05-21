@@ -1,0 +1,328 @@
+['buffer_size = ', 1000000, 'batch_size = ', 64, 'gamma=', 0.99, 'tau=', 0.001, 'lr_actor= ', 0.001, 'lr_critic=', 0.001, 'weight_decay=', 0]
+Episode 1	Average Score: 0.76 	Score: 0.76
+Episode 2	Average Score: 0.83 	Score: 0.91
+Episode 3	Average Score: 0.71 	Score: 0.45
+Episode 4	Average Score: 0.71 	Score: 0.72
+Episode 5	Average Score: 0.70 	Score: 0.64
+Episode 6	Average Score: 0.64 	Score: 0.39
+Episode 7	Average Score: 0.69 	Score: 0.94
+Episode 8	Average Score: 0.70 	Score: 0.77
+Episode 9	Average Score: 0.72 	Score: 0.87
+Episode 10	Average Score: 0.75 	Score: 1.01
+Episode 11	Average Score: 0.82 	Score: 1.52
+Episode 12	Average Score: 0.86 	Score: 1.30
+Episode 13	Average Score: 0.90 	Score: 1.44
+Episode 14	Average Score: 0.92 	Score: 1.18
+Episode 15	Average Score: 0.94 	Score: 1.14
+Episode 16	Average Score: 0.98 	Score: 1.64
+Episode 17	Average Score: 1.01 	Score: 1.56
+Episode 18	Average Score: 1.03 	Score: 1.39
+Episode 19	Average Score: 1.02 	Score: 0.78
+Episode 20	Average Score: 1.02 	Score: 0.99
+Episode 21	Average Score: 1.03 	Score: 1.26
+Episode 22	Average Score: 1.05 	Score: 1.37
+Episode 23	Average Score: 1.07 	Score: 1.53
+Episode 24	Average Score: 1.08 	Score: 1.31
+Episode 25	Average Score: 1.10 	Score: 1.52
+Episode 26	Average Score: 1.11 	Score: 1.55
+Episode 27	Average Score: 1.12 	Score: 1.41
+Episode 28	Average Score: 1.15 	Score: 1.84
+Episode 29	Average Score: 1.14 	Score: 0.95
+Episode 30	Average Score: 1.14 	Score: 1.16
+Episode 31	Average Score: 1.15 	Score: 1.30
+Episode 32	Average Score: 1.16 	Score: 1.51
+Episode 33	Average Score: 1.18 	Score: 1.93
+Episode 34	Average Score: 1.19 	Score: 1.53
+Episode 35	Average Score: 1.21 	Score: 1.61
+Episode 36	Average Score: 1.22 	Score: 1.69
+Episode 37	Average Score: 1.23 	Score: 1.57
+Episode 38	Average Score: 1.24 	Score: 1.60
+Episode 39	Average Score: 1.25 	Score: 1.56
+Episode 40	Average Score: 1.26 	Score: 1.77
+Episode 41	Average Score: 1.26 	Score: 1.47
+Episode 42	Average Score: 1.28 	Score: 1.83
+Episode 43	Average Score: 1.30 	Score: 2.23
+Episode 44	Average Score: 1.31 	Score: 1.68
+Episode 45	Average Score: 1.32 	Score: 1.87
+Episode 46	Average Score: 1.34 	Score: 2.03
+Episode 47	Average Score: 1.34 	Score: 1.41
+Episode 48	Average Score: 1.33 	Score: 0.88
+Episode 49	Average Score: 1.34 	Score: 1.89
+Episode 50	Average Score: 1.35 	Score: 1.73
+Episode 51	Average Score: 1.35 	Score: 1.43
+Episode 52	Average Score: 1.36 	Score: 1.94
+Episode 53	Average Score: 1.36 	Score: 1.36
+Episode 54	Average Score: 1.36 	Score: 1.25
+Episode 55	Average Score: 1.36 	Score: 1.52
+Episode 56	Average Score: 1.38 	Score: 2.35
+Episode 57	Average Score: 1.40 	Score: 2.28
+Episode 58	Average Score: 1.42 	Score: 2.59
+Episode 59	Average Score: 1.43 	Score: 2.34
+Episode 60	Average Score: 1.46 	Score: 2.95
+Episode 61	Average Score: 1.48 	Score: 3.10
+Episode 62	Average Score: 1.50 	Score: 2.45
+Episode 63	Average Score: 1.53 	Score: 3.26
+Episode 64	Average Score: 1.55 	Score: 3.16
+Episode 65	Average Score: 1.57 	Score: 2.76
+Episode 66	Average Score: 1.60 	Score: 3.29
+Episode 67	Average Score: 1.63 	Score: 3.85
+Episode 68	Average Score: 1.67 	Score: 4.37
+Episode 69	Average Score: 1.72 	Score: 5.19
+Episode 70	Average Score: 1.75 	Score: 3.78
+Episode 71	Average Score: 1.80 	Score: 4.97
+Episode 72	Average Score: 1.84 	Score: 4.62
+Episode 73	Average Score: 1.87 	Score: 4.04
+Episode 74	Average Score: 1.90 	Score: 4.19
+Episode 75	Average Score: 1.93 	Score: 4.56
+Episode 76	Average Score: 1.97 	Score: 5.10
+Episode 77	Average Score: 2.02 	Score: 5.09
+Episode 78	Average Score: 2.04 	Score: 4.09
+Episode 79	Average Score: 2.07 	Score: 4.44
+Episode 80	Average Score: 2.11 	Score: 5.06
+Episode 81	Average Score: 2.15 	Score: 5.07
+Episode 82	Average Score: 2.20 	Score: 6.56
+Episode 83	Average Score: 2.26 	Score: 7.35
+Episode 84	Average Score: 2.32 	Score: 7.50
+Episode 85	Average Score: 2.38 	Score: 7.43
+Episode 86	Average Score: 2.45 	Score: 8.25
+Episode 87	Average Score: 2.50 	Score: 6.70
+Episode 88	Average Score: 2.56 	Score: 7.83
+Episode 89	Average Score: 2.63 	Score: 8.20
+Episode 90	Average Score: 2.70 	Score: 9.24
+Episode 91	Average Score: 2.76 	Score: 8.02
+Episode 92	Average Score: 2.84 	Score: 10.08
+Episode 93	Average Score: 2.92 	Score: 10.79
+Episode 94	Average Score: 2.99 	Score: 9.14
+Episode 95	Average Score: 3.05 	Score: 8.70
+Episode 96	Average Score: 3.12 	Score: 10.04
+Episode 97	Average Score: 3.23 	Score: 13.24
+Episode 98	Average Score: 3.31 	Score: 11.67
+Episode 99	Average Score: 3.40 	Score: 11.68
+Episode 100	Average Score: 3.44 	Score: 7.94
+Episode 100	Average Score: 3.44
+	 Elapsed Time: 1069.05 seconds
+Episode 101	Average Score: 3.56 	Score: 12.10
+Episode 102	Average Score: 3.65 	Score: 10.82
+Episode 103	Average Score: 3.79 	Score: 13.72
+Episode 104	Average Score: 3.88 	Score: 9.76
+Episode 105	Average Score: 3.98 	Score: 10.47
+Episode 106	Average Score: 4.12 	Score: 14.32
+Episode 107	Average Score: 4.24 	Score: 12.98
+Episode 108	Average Score: 4.36 	Score: 13.58
+Episode 109	Average Score: 4.49 	Score: 13.23
+Episode 110	Average Score: 4.61 	Score: 13.66
+Episode 111	Average Score: 4.72 	Score: 11.99
+Episode 112	Average Score: 4.84 	Score: 12.96
+Episode 113	Average Score: 4.96 	Score: 13.72
+Episode 114	Average Score: 5.08 	Score: 13.25
+Episode 115	Average Score: 5.20 	Score: 13.27
+Episode 116	Average Score: 5.34 	Score: 15.15
+Episode 117	Average Score: 5.46 	Score: 13.63
+Episode 118	Average Score: 5.60 	Score: 15.90
+Episode 119	Average Score: 5.75 	Score: 16.13
+Episode 120	Average Score: 5.90 	Score: 15.48
+Episode 121	Average Score: 6.05 	Score: 16.54
+Episode 122	Average Score: 6.17 	Score: 12.99
+Episode 123	Average Score: 6.31 	Score: 16.17
+Episode 124	Average Score: 6.47 	Score: 16.89
+Episode 125	Average Score: 6.62 	Score: 16.95
+Episode 126	Average Score: 6.74 	Score: 13.36
+Episode 127	Average Score: 6.88 	Score: 15.44
+Episode 128	Average Score: 7.02 	Score: 15.49
+Episode 129	Average Score: 7.18 	Score: 16.67
+Episode 130	Average Score: 7.34 	Score: 17.42
+Episode 131	Average Score: 7.49 	Score: 16.58
+Episode 132	Average Score: 7.68 	Score: 20.28
+Episode 133	Average Score: 7.81 	Score: 14.90
+Episode 134	Average Score: 7.97 	Score: 17.76
+Episode 135	Average Score: 8.14 	Score: 18.17
+Episode 136	Average Score: 8.30 	Score: 18.16
+Episode 137	Average Score: 8.48 	Score: 19.37
+Episode 138	Average Score: 8.64 	Score: 17.85
+Episode 139	Average Score: 8.83 	Score: 20.55
+Episode 140	Average Score: 9.02 	Score: 20.01
+Episode 141	Average Score: 9.21 	Score: 20.97
+Episode 142	Average Score: 9.40 	Score: 20.57
+Episode 143	Average Score: 9.56 	Score: 18.31
+Episode 144	Average Score: 9.73 	Score: 18.45
+Episode 145	Average Score: 9.89 	Score: 18.65
+Episode 146	Average Score: 10.09 	Score: 22.10
+Episode 147	Average Score: 10.22 	Score: 14.32
+Episode 148	Average Score: 10.40 	Score: 18.47
+Episode 149	Average Score: 10.58 	Score: 19.99
+Episode 150	Average Score: 10.74 	Score: 17.98
+Episode 151	Average Score: 10.94 	Score: 21.02
+Episode 152	Average Score: 11.12 	Score: 20.38
+Episode 153	Average Score: 11.31 	Score: 20.37
+Episode 154	Average Score: 11.51 	Score: 20.87
+Episode 155	Average Score: 11.72 	Score: 22.61
+Episode 156	Average Score: 11.91 	Score: 21.76
+Episode 157	Average Score: 12.12 	Score: 22.62
+Episode 158	Average Score: 12.27 	Score: 18.21
+Episode 159	Average Score: 12.47 	Score: 21.48
+Episode 160	Average Score: 12.65 	Score: 21.85
+Episode 161	Average Score: 12.85 	Score: 22.57
+Episode 162	Average Score: 13.09 	Score: 26.06
+Episode 163	Average Score: 13.32 	Score: 26.36
+Episode 164	Average Score: 13.56 	Score: 27.13
+Episode 165	Average Score: 13.78 	Score: 24.87
+Episode 166	Average Score: 13.96 	Score: 21.11
+Episode 167	Average Score: 14.13 	Score: 21.68
+Episode 168	Average Score: 14.30 	Score: 20.78
+Episode 169	Average Score: 14.49 	Score: 24.00
+Episode 170	Average Score: 14.69 	Score: 23.94
+Episode 171	Average Score: 14.88 	Score: 23.70
+Episode 172	Average Score: 15.06 	Score: 23.34
+Episode 173	Average Score: 15.21 	Score: 18.37
+Episode 174	Average Score: 15.34 	Score: 17.37
+Episode 175	Average Score: 15.46 	Score: 16.34
+Episode 176	Average Score: 15.57 	Score: 16.87
+Episode 177	Average Score: 15.69 	Score: 16.96
+Episode 178	Average Score: 15.87 	Score: 21.95
+
+Episode 179	Average Score: 16.06 	Score: 23.02
+Episode 180	Average Score: 16.25 	Score: 24.02
+Episode 181	Average Score: 16.48 	Score: 28.90
+Episode 182	Average Score: 16.66 	Score: 24.60
+Episode 183	Average Score: 16.81 	Score: 21.91
+Episode 184	Average Score: 16.96 	Score: 22.77
+Episode 185	Average Score: 17.08 	Score: 18.71
+Episode 186	Average Score: 17.23 	Score: 23.51
+Episode 187	Average Score: 17.37 	Score: 20.65
+Episode 188	Average Score: 17.50 	Score: 21.47
+Episode 189	Average Score: 17.65 	Score: 22.56
+Episode 190	Average Score: 17.81 	Score: 25.29
+Episode 191	Average Score: 17.97 	Score: 24.05
+Episode 192	Average Score: 18.15 	Score: 27.85
+Episode 193	Average Score: 18.32 	Score: 28.10
+Episode 194	Average Score: 18.47 	Score: 24.53
+Episode 195	Average Score: 18.66 	Score: 26.99
+Episode 196	Average Score: 18.84 	Score: 28.22
+Episode 197	Average Score: 18.99 	Score: 28.82
+Episode 198	Average Score: 19.15 	Score: 27.08
+Episode 199	Average Score: 19.31 	Score: 28.40
+Episode 200	Average Score: 19.54 	Score: 30.10
+Episode 200	Average Score: 19.54
+	 Elapsed Time: 2204.63 seconds
+Episode 201	Average Score: 19.70 	Score: 28.72
+Episode 202	Average Score: 19.92 	Score: 32.44
+Episode 203	Average Score: 20.09 	Score: 30.56
+Episode 204	Average Score: 20.29 	Score: 29.64
+Episode 205	Average Score: 20.45 	Score: 26.58
+Episode 206	Average Score: 20.60 	Score: 29.55
+Episode 207	Average Score: 20.76 	Score: 29.22
+Episode 208	Average Score: 20.91 	Score: 28.45
+Episode 209	Average Score: 21.08 	Score: 30.18
+Episode 210	Average Score: 21.23 	Score: 28.67
+Episode 211	Average Score: 21.42 	Score: 30.59
+Episode 212	Average Score: 21.60 	Score: 31.05
+Episode 213	Average Score: 21.79 	Score: 33.38
+Episode 214	Average Score: 21.92 	Score: 26.24
+Episode 215	Average Score: 22.06 	Score: 26.58
+Episode 216	Average Score: 22.18 	Score: 27.38
+Episode 217	Average Score: 22.36 	Score: 31.75
+Episode 218	Average Score: 22.50 	Score: 29.70
+Episode 219	Average Score: 22.63 	Score: 29.57
+Episode 220	Average Score: 22.78 	Score: 30.22
+Episode 221	Average Score: 22.91 	Score: 29.78
+Episode 222	Average Score: 23.11 	Score: 33.10
+Episode 223	Average Score: 23.28 	Score: 33.32
+Episode 224	Average Score: 23.44 	Score: 32.30
+Episode 225	Average Score: 23.54 	Score: 27.48
+Episode 226	Average Score: 23.69 	Score: 27.68
+Episode 227	Average Score: 23.85 	Score: 31.43
+Episode 228	Average Score: 23.99 	Score: 29.71
+Episode 229	Average Score: 24.16 	Score: 33.63
+Episode 230	Average Score: 24.29 	Score: 30.72
+Episode 231	Average Score: 24.42 	Score: 29.88
+Episode 232	Average Score: 24.53 	Score: 31.05
+Episode 233	Average Score: 24.69 	Score: 30.67
+Episode 234	Average Score: 24.81 	Score: 30.04
+Episode 235	Average Score: 24.91 	Score: 27.66
+Episode 236	Average Score: 25.05 	Score: 32.52
+Episode 237	Average Score: 25.16 	Score: 30.10
+Episode 238	Average Score: 25.26 	Score: 28.43
+Episode 239	Average Score: 25.35 	Score: 28.96
+Episode 240	Average Score: 25.44 	Score: 29.35
+Episode 241	Average Score: 25.56 	Score: 33.16
+Episode 242	Average Score: 25.68 	Score: 31.80
+Episode 243	Average Score: 25.81 	Score: 31.67
+Episode 244	Average Score: 25.92 	Score: 29.95
+Episode 245	Average Score: 26.05 	Score: 30.78
+Episode 246	Average Score: 26.15 	Score: 32.55
+Episode 247	Average Score: 26.30 	Score: 28.99
+Episode 248	Average Score: 26.41 	Score: 29.55
+Episode 249	Average Score: 26.51 	Score: 30.45
+Episode 250	Average Score: 26.63 	Score: 29.57
+Episode 251	Average Score: 26.73 	Score: 31.57
+Episode 252	Average Score: 26.84 	Score: 30.57
+Episode 253	Average Score: 26.95 	Score: 31.83
+Episode 254	Average Score: 27.04 	Score: 30.29
+Episode 255	Average Score: 27.13 	Score: 30.89
+Episode 256	Average Score: 27.22 	Score: 30.50
+Episode 257	Average Score: 27.32 	Score: 32.64
+Episode 258	Average Score: 27.45 	Score: 31.35
+Episode 259	Average Score: 27.52 	Score: 28.45
+Episode 260	Average Score: 27.62 	Score: 32.62
+Episode 261	Average Score: 27.70 	Score: 30.07
+Episode 262	Average Score: 27.74 	Score: 29.79
+Episode 263	Average Score: 27.80 	Score: 32.36
+Episode 264	Average Score: 27.86 	Score: 33.65
+Episode 265	Average Score: 27.94 	Score: 33.11
+Episode 266	Average Score: 28.06 	Score: 32.34
+Episode 267	Average Score: 28.14 	Score: 30.28
+Episode 268	Average Score: 28.23 	Score: 29.46
+Episode 269	Average Score: 28.28 	Score: 29.35
+Episode 270	Average Score: 28.33 	Score: 28.84
+Episode 271	Average Score: 28.40 	Score: 30.43
+Episode 272	Average Score: 28.46 	Score: 29.12
+Episode 273	Average Score: 28.57 	Score: 29.79
+Episode 274	Average Score: 28.70 	Score: 29.82
+Episode 275	Average Score: 28.80 	Score: 27.04
+Episode 276	Average Score: 28.95 	Score: 31.72
+Episode 277	Average Score: 29.09 	Score: 30.88
+Episode 278	Average Score: 29.17 	Score: 30.29
+Episode 279	Average Score: 29.27 	Score: 32.36
+Episode 280	Average Score: 29.33 	Score: 30.56
+Episode 281	Average Score: 29.36 	Score: 31.64
+Episode 282	Average Score: 29.40 	Score: 28.49
+Episode 283	Average Score: 29.49 	Score: 30.80
+Episode 284	Average Score: 29.57 	Score: 30.61
+Episode 285	Average Score: 29.71 	Score: 32.90
+Episode 286	Average Score: 29.80 	Score: 32.60
+Episode 287	Average Score: 29.89 	Score: 29.63
+Episode 288	Average Score: 29.99 	Score: 31.32
+Episode 289	Average Score: 30.06 	Score: 30.31
+Episode 289	Average Score: 30.06
+	 Elapsed Time: 3255.35 seconds
+
+Environment solved in 289 episodes!	Average Score: 30.06
+	 Time to train network: 3257.11 seconds
+
+
+------------------------
+Project 2 - Continuous Control - Deep Reinforcement Learning Nanodegree - Trained Solution
+
+This video demonstrates a trained solution to the second project in the Udacity Deep Reinforcement Learning Nanodegree. Here, a robotic arm is trained to reach a ball in its vicinity.
+
+To view an untrained agent, click here: https://youtu.be/Lok1AF4mFmE
+
+------------------------
+Project 2 - Continuous Control - Deep Reinforcement Learning Nanodegree - Untrained
+
+This video demonstrates a untrained example that corresponds to the second project in the Udacity Deep Reinforcement Learning Nanodegree. Here, a robotic arm is to be trained to reach a ball in its vicinity.
+
+To view a trained agent, click here: https://youtu.be/xpmJBSXJaD8
+
+-----------------------
+
+        """
+        if self.keep_learning == 1:
+            if self.more_frequent_learning == 1:
+                for kk in range(10):
+                    if len(self.memory) > self.BATCH_SIZE and self.time_step % 20 == 0:
+                        experiences = self.memory.sample()
+                        self.learn(experiences, self.GAMMA)
+            else:
+        """
+
